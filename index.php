@@ -265,7 +265,7 @@ $ext_dir_path = '/var/www/app/ext/';
 $ext_name = 'hello.so';
 
 // unix socket path or tcp host
-$connect_path = '/var/run/php/php7.2-fpm.sock';
+$connect_path = 'unix:///var/run/php/php7.2-fpm.sock';
 
 // tcp connection port (unix socket: -1)
 $port = -1;
@@ -280,7 +280,7 @@ $prepend_file_path = 'http://kaibro.tw/gginin2';
 
 $req = '/' . basename($filepath);
 $uri = $req;
-$client = new FCGIClient("unix://" . $connect_path, $port);
+$client = new FCGIClient($connect_path, $port);
 
 // disable open_basedir and open allow_url_include
 $php_value = "allow_url_include = On\nopen_basedir = /\nauto_prepend_file = " . $prepend_file_path;

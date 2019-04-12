@@ -15,6 +15,6 @@ It will help you to bypass strict `disable_functions` to RCE by loading the mali
     - extension name
     - prepend file
     - ...
-- upload this script and your malicious extension
+- upload this script and your malicious extension to the target machine
 - enjoy it!
 
