@@ -17,8 +17,12 @@ Caution: different php api version may cause module loading error.
 - `/build/hello.so`
     - php 7.2
     - x64 elf
-    - PHP Api Version: 20170718
+    - PHP API Version: 20170718
 - `/build/hello-20180731.so`
     - php 7.2
     - x64 elf
-    - PHP Api Version: 20180731
+    - PHP API Version: 20180731
+- `/build/hello-20190529.so`
+    - php 7.4
+    - x64 elf
+    - PHP API Version: 20190529
